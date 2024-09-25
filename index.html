@@ -29,23 +29,10 @@ a:hover   {color:#000;}  /* mouse over link */
 a:active  {color:#000;}  
 
 
-@mixin transition {
-  @for $i from 1 through 11 {
-    div:nth-child(#{$i}) {
-      @keyframes example-#{$i} {
-        0% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(8px + $i);
-          opacity: $i / 16;
-        }
-      }
-    }
-  } 
-}
-p {
+
+h1 {
   color: black;
+  font-family: 'Oswald', sans-serif;
   padding-right: 1em; 
   @include transition;
   @for $i from 1 through 11 {
@@ -59,8 +46,7 @@ p {
       animation-timing-function: ease-in-out;
     }
   }
-}
-			 
+}	 
 		 </style>
 	 </head>
 	<body>	
@@ -76,7 +62,7 @@ p {
 	<source src="abdxed.ogg" type="audio/ogg">
 </audio>
 <footer>
-  <p>
+  <h1>
   <a href="https://www.google.com/maps/place/6%C2%B053'19.3%22S+107%C2%B037'18.6%22E/@-6.8888069,107.621934,18z/data=!4m4!3m3!8m2!3d-6.888689!4d107.6218262?hl=id">
       <div>L</div>
       <div>O</div>
@@ -90,7 +76,7 @@ p {
       <div>A</div>
       <div>D</div>
   
-  </a></p>
+  </a></h1>
 </footer>
 	</body>
 
